@@ -28,7 +28,7 @@ public class UsuarioResource {
 	private final UsuarioService service;
 	private final LancamentoService lancamentoService;
 	
-	@PostMapping()
+	@PostMapping
 	public ResponseEntity salvar(@RequestBody UsuarioDTO dto) {
 
 		Usuario usuario = Usuario.builder()
